@@ -101,3 +101,10 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+# Use vim instead of vi
+alias vi='vim' 
+
+# Apt-get aliases
+alias update='sudo apt-get update'
+alias install='sudo apt-get install'
