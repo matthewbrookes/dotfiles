@@ -108,3 +108,7 @@ alias vi='vim'
 # Apt-get aliases
 alias update='sudo apt-get update'
 alias install='sudo apt-get install'
+
+# Power aliases
+alias poweroff='sudo shutdown now -h'
+alias restart='sudo shutdown now -r' 
