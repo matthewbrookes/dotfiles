@@ -13,18 +13,17 @@ set wildmenu
 call pathogen#infect()
 call pathogen#helptags()
 
-"Window and tab commands
-map <Leader>h <esc>:tabprevious<CR>
-map <Leader>l <esc>:tabnext<CR>
+"Define leader
+let mapleader = ','
+
+"Window"" and tab commands
+map <Leader>h <esc>:tabp<CR>
+map <Leader>l <esc>:tabn<CR>
 map <Leader>j <esc><c-w>j
 map <Leader>k <esc><c-w>k
 
 "Other general mappings
-map <Leader>r <esc>:!python3 %<CR>
-
-set foldmethod=indent
-set foldlevel=2
-set foldnestmax=4
+map <Leader>r <esc>:w <CR> :!python3 %<CR>
 
 " visual
 highlight Normal ctermbg=black
@@ -34,7 +33,7 @@ set t_Co=256"
 
 
 " colorpack
-colorscheme vibrantink
+"`"colorscheme vibrantink
 
 " gundo
 nnoremap <F5> :GundoToggle<CR>
