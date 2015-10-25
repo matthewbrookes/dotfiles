@@ -112,3 +112,6 @@ alias install='sudo apt-get install'
 # Power aliases
 alias poweroff='sudo shutdown now -h'
 alias restart='sudo shutdown now -r' 
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
+export GOPATH=$HOME/gopath
+export PATH=$GOPATH:$GOPATH/bin:$PATH
