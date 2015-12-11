@@ -37,6 +37,16 @@ case "$TERM" in
     xterm-color) color_prompt=yes;;
 esac
 
+# Regular Colors
+BLACK='\e[0;30m'        # Black
+RED='\e[0;31m'          # Red
+GREEN='\e[0;32m'        # Green
+YELLOW='\e[0;33m'       # Yellow
+BLUE='\e[0;34m'         # Blue
+PURPLE='\e[0;35m'       # Purple
+CYAN='\e[0;36m'         # Cyan
+WHITE='\e[0;37m'        # White
+
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
@@ -54,9 +64,11 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\w \$\[\033[00m\] '
+    PS1="\[$GREEN\]\u:\[$YELLOW\]\W\[$PURPLE\]\$(__git_ps1)\[$WHITE\]\$ "
+    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\] \[\033[01;34m\]\w \$\[\033[00m\] '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    #PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1="\u:\W\$(__git_ps1)\$ "
 fi
 unset color_prompt force_color_prompt
 
