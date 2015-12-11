@@ -117,22 +117,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# Use vim instead of vi
-alias vi='vim' 
-
-# Apt-get aliases
-alias update='sudo apt-get update'
-alias install='sudo apt-get install'
-
-# Power aliases
-alias poweroff='sudo shutdown now -h'
-alias restart='sudo shutdown now -r' 
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk/
+
 export GOPATH=$HOME/gopath
 export PATH=$GOPATH:$GOPATH/bin:$PATH
-
-#Network aliases
-alias wifi='sudo systemctl restart netctl-auto@wlp2s0.service &&
-            sudo systemctl stop netctl-ifplugd@enp3s0.service'
-alias ethernet='sudo systemctl restart netctl-ifplugd@enp3s0.service &&
-                sudo systemctl stop netctl-auto@wlp2s0.service'
