@@ -17,3 +17,6 @@ alias wifi='sudo systemctl restart netctl-auto@wlp2s0.service &&
             sudo systemctl stop netctl-ifplugd@enp3s0.service'
 alias ethernet='sudo systemctl restart netctl-ifplugd@enp3s0.service &&
                 sudo systemctl stop netctl-auto@wlp2s0.service'
+
+#Move into imperial directory
+alias imp='cd ~/Documents/Imperial'
