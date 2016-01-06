@@ -20,3 +20,6 @@ alias ethernet='sudo systemctl restart netctl-ifplugd@enp3s0.service &&
 
 #Move into imperial directory
 alias imp='cd ~/Documents/Imperial'
+
+#Gnome-mplayer
+alias gmplayer='gnome-mplayer'
