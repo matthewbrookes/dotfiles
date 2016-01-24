@@ -74,3 +74,6 @@ endfunc
 let g:syntastic_always_populate_loc_list = 1
 " Check synastic errors when loading file
 let g:syntastic_check_on_open = 1
+
+" Wrap git commit messages at 72 characters
+au FileType gitcommit set tw=72
