@@ -40,18 +40,18 @@
 # name.  You can configure this per-repository with the
 # bash.showDirtyState variable, which defaults to true once
 # GIT_PS1_SHOWDIRTYSTATE is enabled.
-#
+GIT_PS1_SHOWDIRTYSTATE='1'
 # You can also see if currently something is stashed, by setting
 # GIT_PS1_SHOWSTASHSTATE to a nonempty value. If something is stashed,
 # then a '$' will be shown next to the branch name.
-#
+GIT_PS1_SHOWSTASHSTATE='1'
 # If you would like to see if there're untracked files, then you can set
 # GIT_PS1_SHOWUNTRACKEDFILES to a nonempty value. If there're untracked
 # files, then a '%' will be shown next to the branch name.  You can
 # configure this per-repository with the bash.showUntrackedFiles
 # variable, which defaults to true once GIT_PS1_SHOWUNTRACKEDFILES is
 # enabled.
-#
+GIT_PS1_SHOWUNTRACKEDFILES='1'
 # If you would like to see the difference between HEAD and its upstream,
 # set GIT_PS1_SHOWUPSTREAM="auto".  A "<" indicates you are behind, ">"
 # indicates you are ahead, "<>" indicates you have diverged and "="
@@ -66,6 +66,7 @@
 #     git           always compare HEAD to @{upstream}
 #     svn           always compare HEAD to your SVN upstream
 #
+GIT_PS1_SHOWUPSTREAM="auto"
 # You can change the separator between the branch name and the above
 # state symbols by setting GIT_PS1_STATESEPARATOR. The default separator
 # is SP.
