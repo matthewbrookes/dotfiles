@@ -72,8 +72,13 @@ endfunc
 
 " Load syntastic errors into location list
 let g:syntastic_always_populate_loc_list = 1
-" Check synastic errors when loading file
-let g:syntastic_check_on_open = 1
+" Don't Check synastic errors when loading file
+let g:syntastic_check_on_open = 0
+" Don't check on write
+let g:syntastic_check_on_wq = 0
+" Ignore certain file types for syntastic
+let g:syntastic_mode_map = { 'mode': 'active',
+                               \ 'passive_filetypes': ['asm'] }
 
 " Wrap git commit messages at 72 characters
 au FileType gitcommit set tw=72
