@@ -77,3 +77,7 @@ let g:syntastic_check_on_open = 1
 
 " Wrap git commit messages at 72 characters
 au FileType gitcommit set tw=72
+
+"Notes
+:let g:notes_directories = ['~/Documents/Notes']
+:let g:notes_suffix = '.txt'
