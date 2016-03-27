@@ -89,6 +89,12 @@ au FileType haskell
   \ set softtabstop=2 |
   \ set shiftwidth=2 
 
+" Java settings
+au FileType java
+  \ set tabstop=4 |
+  \ set softtabstop=4 |
+  \ set shiftwidth=4
+
 "Notes
 :let g:notes_directories = ['~/Documents/Notes']
 :let g:notes_suffix = '.txt'
