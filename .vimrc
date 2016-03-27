@@ -83,6 +83,12 @@ let g:syntastic_mode_map = { 'mode': 'active',
 " Wrap git commit messages at 72 characters
 au FileType gitcommit set tw=72
 
+" Haskell settings
+au FileType haskell 
+  \ set tabstop=2 |
+  \ set softtabstop=2 |
+  \ set shiftwidth=2 
+
 "Notes
 :let g:notes_directories = ['~/Documents/Notes']
 :let g:notes_suffix = '.txt'
