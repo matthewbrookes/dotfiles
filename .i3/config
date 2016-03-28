@@ -25,7 +25,7 @@ font pango: M+ 1m, FontAwesome, Ionicons, 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminator --working-directory "`xcwd`"
+bindsym $mod+Return exec lxterminal --working-directory=`xcwd`
 
 # kill focused window
 bindsym $mod+Shift+q kill
