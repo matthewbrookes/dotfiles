@@ -56,7 +56,7 @@ set colorcolumn=80
 
 
 " colorpack
-colorscheme vibrantink
+colorscheme lanox
 
 " pep8
 let g:pep8_map='<leader>8'
