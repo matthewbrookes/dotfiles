@@ -101,8 +101,11 @@ nnoremap <space> za
 let g:SimpylFold_docstring_preview=1
 
 
-"Poweline status
+"Powerline status
 set laststatus=2
+
+"NERDTree settings
+nnoremap <F3> :NERDTreeToggle <Enter>
 
 "python with virtualenv support
 py << EOF
