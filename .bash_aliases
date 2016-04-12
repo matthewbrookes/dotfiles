@@ -1,25 +1,21 @@
 # Make all relevant parent directories
 alias md='mkdir -p'
 
-# Use vim instead of vi
-alias vi='vim' 
-
-# Apt-get aliases
-alias update='sudo apt-get update'
-alias install='sudo apt-get install'
-
-# Power aliases
-alias poweroff='sudo shutdown now -h'
-alias restart='sudo shutdown now -r' 
-
-#Network aliases
-alias wifi='sudo systemctl restart netctl-auto@wlp2s0.service &&
-            sudo systemctl stop netctl-ifplugd@enp3s0.service'
-alias ethernet='sudo systemctl restart netctl-ifplugd@enp3s0.service &&
-                sudo systemctl stop netctl-auto@wlp2s0.service'
-
 #Move into imperial directory
-alias imp='cd ~/Documents/Imperial'
+alias imp='cd ~/Imperial'
 
 #Gnome-mplayer
 alias gmplayer='gnome-mplayer'
+
+#ls aliases
+#enable color support of ls and grep
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto -h'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+alias la='ls -A'
