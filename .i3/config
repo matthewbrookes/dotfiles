@@ -108,7 +108,7 @@ set $workspace5  "5"
 set $workspace6  "6"
 set $workspace7  "7"
 set $workspace8  "8"
-set $workspace9  "9"
+set $workspace9  "9: "
 set $workspace10 "10: "
 
 # switch to workspace
@@ -151,6 +151,7 @@ exec --no-startup-id xrdb -merge ~/.Xresources
 exec --no-startup-id nm-applet
 exec spotify
 exec compton -b
+exec thunderbird
 # Setup screenlocker
 exec xscreensaver -no-splash&
 exec xss-lock -- xscreensaver-command --lock &
@@ -191,5 +192,6 @@ bar {
 
 # Program Workspaces
 for_window [class="Spotify"] move to workspace $workspace10
+assign [class="Thunderbird"] $workspace9
 
 
