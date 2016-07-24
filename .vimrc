@@ -94,6 +94,14 @@ au FileType python
   \ set tw=79 |
   \ set encoding=utf-8
 
+" LaTeX settings
+au FileType tex
+  \ set tabstop=4 |
+  \ set softtabstop=4 |
+  \ set shiftwidth=4 |
+  \ set tw=79 |
+  \ set encoding=utf-8
+
 
 "Enable folding and use space key to fold/unfold
 set foldmethod=indent
