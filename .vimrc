@@ -29,7 +29,7 @@ set tabstop=2     " a hard TAB displays as 2 columns
 set expandtab     " insert spaces when hitting TABs
 set softtabstop=2 " insert/delete 2 spaces when hitting a TAB/BACKSPACE
 set shiftround    " round indent to multiple of 'shiftwidth'
-set autoindent    " align the new line indent with the previous line
+set smartindent    " align the new line indent with the previous line
 set wildmenu
 set number
 
