@@ -24,3 +24,5 @@ alias lla='ls -la'
 
 # Clipboard alias
 alias cclip='xclip -sel clipboard'
+
+
