@@ -33,10 +33,10 @@ bindsym $mod+Shift+q kill
 bindsym $mod+c exec firefox
 
 #Decrease brightness
-bindcode 232 exec "xbacklight -dec 20"
+bindcode 232 exec "xbacklight -dec 10"
 
 #Increase brightness
-bindcode 233 exec "xbacklight -inc 20"
+bindcode 233 exec "xbacklight -inc 10"
 
 #Volume controls
 bindcode 121  exec "/usr/bin/pulseaudio-ctl mute"
