@@ -102,6 +102,8 @@ au FileType tex
   \ set tw=79 |
   \ set encoding=utf-8
 
+"YouCompleteMe Options
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 "Enable folding and use space key to fold/unfold
 set foldmethod=indent
