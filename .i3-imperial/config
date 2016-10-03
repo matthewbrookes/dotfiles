@@ -32,6 +32,9 @@ bindsym $mod+Shift+q kill
 # start firefox
 bindsym $mod+c exec firefox
 
+# lock screen
+bindsym $mod+Shift+w exec gnome-screensaver-command -l
+
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
