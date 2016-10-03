@@ -141,7 +141,7 @@ exec thunderbird
 # Setup screenlocker
 exec xscreensaver -no-splash&
 # Setup wallpaper
-exec_always feh --bg-scale ~/Pictures/wallpaper.jpg 
+exec_always feh --bg-scale ~/Pictures/Wallpapers/background.jpg
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
