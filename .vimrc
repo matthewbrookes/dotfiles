@@ -74,6 +74,9 @@ let g:syntastic_mode_map = { 'mode': 'active',
 " Wrap git commit messages at 72 characters
 au FileType gitcommit set tw=72
 
+" Wrap text files at 80 characters
+au FileType text set tw=80
+
 " Haskell settings
 au FileType haskell 
   \ set tabstop=2 |
