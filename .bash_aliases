@@ -25,4 +25,9 @@ alias lla='ls -la'
 # Clipboard alias
 alias cclip='xclip -sel clipboard'
 
-
+# Git alias
+alias gp='git push'
+alias gs='git status'
+alias gc='git commit -v'
+alias ga='git add -p'
+alias gd='git diff'
