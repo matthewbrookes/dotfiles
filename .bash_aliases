@@ -27,6 +27,7 @@ alias cclip='xclip -sel clipboard'
 
 # Git alias
 alias gp='git push'
+alias gpb='git push -u origin $(git rev-parse --abbrev-ref HEAD)'
 alias gs='git status'
 alias gc='git commit -v'
 alias ga='git add -p'
