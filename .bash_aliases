@@ -1,9 +1,6 @@
 # Make all relevant parent directories
 alias md='mkdir -p'
 
-#Move into imperial directory
-alias imp='cd ~/Imperial'
-
 #Gnome-mplayer
 alias gmplayer='gnome-mplayer'
 
@@ -33,3 +30,10 @@ alias gc='git commit -v'
 alias ga='git add -p'
 alias gd='git diff'
 alias glog='git log --oneline --graph --all'
+
+# tmux
+alias tmux='tmux -2'
+
+# nvim
+alias v='nvim'
+alias vim='nvim'

@@ -24,8 +24,8 @@ HISTFILESIZE=2000
 shopt -s checkwinsize
 
 # Set editors
-export VISUAL="vim"
-export EDITOR="vim"
+export VISUAL="nvim"
+export EDITOR="nvim"
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
@@ -104,4 +104,5 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-umask 077
+# Set directories to be purple
+export LS_COLORS="$LS_COLORS:di=0;35:"
