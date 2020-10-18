@@ -1,0 +1,31 @@
+{
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": [
+        "c",
+        "cpp",
+        "objc",
+        "objcpp"
+      ],
+      "rootPatterns": [
+        "build/compile_commands.json"
+      ],
+      "initializationOptions": {
+        "compilationDatabaseDirectory": "build",
+        "client": {
+          "snippetSupport": true
+        },
+        "diagnostics": {
+          "onChange": 200
+        },
+        "highlight": {
+          "lsRanges": true
+        },
+        "index": {
+          "threads": 2
+        }
+      }
+    }
+  }
+}
