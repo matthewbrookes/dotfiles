@@ -4,6 +4,8 @@ Plug 'tpope/vim-sensible'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 call plug#end()
 
@@ -78,6 +80,10 @@ au FileType python
 
 "NERDTree settings
 nnoremap <F3> :NERDTreeToggle <Enter>
+
+" fzf
+nnoremap <silent> <C-p> :Files<CR>
+set grepprg=rg\ --vimgrep\ --smart-case\ --follow
 
 " coc.nvim settings
 " if hidden is not set, TextEdit might fail.
